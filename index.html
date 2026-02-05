@@ -1,129 +1,201 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Ray Mhlongo | Junior Data Analyst (SQL & Power BI)</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+:root {
+  --bg: #0b1120;
+  --surface: #111a2e;
+  --surface-soft: #16233d;
+  --text: #e6ecf5;
+  --muted: #9fb0cc;
+  --primary: #5eead4;
+  --primary-strong: #2dd4bf;
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 14px 35px rgba(0, 0, 0, 0.28);
+  --radius: 16px;
+}
 
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+html {
+  scroll-behavior: smooth;
+}
 
-			<!-- Intro -->
-			<div id="intro">
-				<h1>Hi, I’m<br />
-				Ray Mhlongo</h1>
-				<p>Junior Data Analyst | SQL & Power BI<br />
-				Focused on analyzing PC component pricing data in South Africa using SQL and Power BI. I create clean databases, dimension tables, and dashboards that answer real business questions.</p>
-				<ul class="actions">
-					<li><a href="#skills" class="button icon solid solo fa-arrow-down scrolly">See Skills</a></li>
-				</ul>
-			</div>
+body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(45, 212, 191, 0.1), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.14), transparent 45%),
+    var(--bg);
+  color: var(--text);
+}
 
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">Ray Mhlongo</a>
-				<ul class="icons">
-					<li><a href="https://github.com/HonestFan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/raymhlongo" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				</ul>
-			</header>
+body, input, select, textarea {
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li class="active"><a href="#intro">Home</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-				</ul>
-			</nav>
+#wrapper {
+  max-width: 1120px;
+}
 
-			<!-- Main -->
-			<div id="main">
+#intro {
+  padding: 6rem 2.5rem 4rem;
+  background: linear-gradient(160deg, rgba(17, 26, 46, 0.95), rgba(17, 26, 46, 0.78));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
 
-				<!-- Skills Section -->
-				<section id="skills">
-					<header class="major">
-						<h2>Skills</h2>
-					</header>
-					<div class="posts">
-						<article>
-							<h3>SQL</h3>
-							<p>Writing queries to extract, clean, join, and aggregate data for analysis.</p>
-						</article>
-						<article>
-							<h3>Power BI</h3>
-							<p>Building interactive dashboards, data models, and calculated measures.</p>
-						</article>
-						<article>
-							<h3>Excel</h3>
-							<p>Cleaning datasets, using formulas, pivot tables, and summary reports.</p>
-						</article>
-						<article>
-							<h3>Data Analysis</h3>
-							<p>Analyzing data to identify trends, patterns, and actionable insights.</p>
-						</article>
-					</div>
-				</section>
+#intro h1 {
+  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+}
 
-				<!-- Projects Section -->
-				<section id="projects">
-					<header class="major">
-						<h2>Project: PC Parts Price Analysis</h2>
-					</header>
-					<article class="post featured">
-						<a href="#" class="image main"><img src="images/magini-glass.jpg" alt="Power BI Dashboard" /></a>
-						<p>
-							- Cleaned and standardized raw PC component data using SQL.<br>
-							- Created relational tables and dimension tables for categories, provinces, shops, and manufacturers.<br>
-							- Built an interactive Power BI dashboard to visualize prices, warranties, and shop comparisons.
-						</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/Ray-Mhlongo/PC-SALES-PROJECT-1/tree/main/scripts" class="button">SQL Scripts</a></li>
-							<li><a href="https://github.com/Ray-Mhlongo/PC-SALES-PROJECT-1/tree/main/Power%20BI" class="button">Power BI Dashboard</a></li>
-						</ul>
-					</article>
-				</section>
+#intro p {
+  color: var(--muted);
+  max-width: 780px;
+}
 
-			</div>
+#header {
+  margin-top: 1.75rem;
+  background: rgba(17, 26, 46, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.9rem 1.2rem;
+}
 
-			<!-- Footer -->
-			<footer id="footer">
-				<section class="split contact">
-					<section>
-						<h3>Email</h3>
-						<p><a href="mailto:rodgersmhlongo@gmail.com">rodgersmhlongo@gmail.com</a></p>
-					</section>
-					<section>
-						<h3>Phone</h3>
-						<p>+27 71 765 4142</p>
-					</section>
-					<section>
-						<h3>Social</h3>
-						<ul class="icons alt">
-							<li><a href="https://github.com/HonestFan" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/raymhlongo" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						</ul>
-					</section>
-				</section>
-				<div id="copyright">
-					<ul><li>&copy; Ray Mhlongo</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-				</div>
-			</footer>
+#header .logo {
+  border-bottom: 0;
+  color: var(--text);
+}
 
-		</div>
+#nav {
+  margin-top: 1rem;
+  background: rgba(17, 26, 46, 0.85);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+#nav ul.links li a,
+#nav ul.links li.active a {
+  color: var(--text);
+}
 
-	</body>
-</html>
+#nav ul.links li.active a {
+  background-color: rgba(94, 234, 212, 0.16);
+}
+
+#main {
+  margin-top: 1.5rem;
+  background: transparent;
+}
+
+#main > section {
+  background: rgba(17, 26, 46, 0.88);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+header.major h2,
+h3 {
+  color: var(--text);
+}
+
+p {
+  color: var(--muted);
+}
+
+.posts {
+  gap: 1rem;
+}
+
+.posts > article {
+  background: linear-gradient(160deg, rgba(22, 35, 61, 0.95), rgba(22, 35, 61, 0.7));
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.posts > article:hover {
+  transform: translateY(-3px);
+  border-color: rgba(94, 234, 212, 0.7);
+}
+
+.post.featured .image.main img {
+  border-radius: 12px;
+}
+
+.button {
+  border-radius: 999px;
+  border-color: rgba(94, 234, 212, 0.55) !important;
+  color: var(--text) !important;
+  box-shadow: none !important;
+}
+
+.button:hover {
+  background-color: rgba(94, 234, 212, 0.16) !important;
+  border-color: var(--primary) !important;
+}
+
+#footer {
+  background: rgba(17, 26, 46, 0.9);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+#footer .split.contact > section {
+  border-color: var(--border);
+}
+
+a,
+#footer a,
+.icons a {
+  color: var(--primary);
+}
+
+#copyright {
+  color: var(--muted);
+}
+
+@media screen and (max-width: 980px) {
+  #intro {
+    padding: 4.5rem 1.75rem 3rem;
+  }
+
+  #main > section {
+    padding-top: 0.25rem;
+  }
+
+  .posts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #intro {
+    padding: 3.5rem 1.2rem 2.5rem;
+  }
+
+  #header,
+  #nav,
+  #main > section,
+  #footer {
+    border-radius: 12px;
+  }
+
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .actions.special {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .actions.special li {
+    width: 100%;
+  }
+
+  .actions.special .button {
+    width: 100%;
+  }
+}
